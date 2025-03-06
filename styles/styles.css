@@ -1,10 +1,18 @@
 body{
   background-color: #bcf5ea;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  text-align: justify;
+  position: relative;
 }
 h1{
-  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 50px;
   text-align: center;
+h2{
+  font-size: 45px;
 }
-.head{
-  background-color:#ffff;
+h3{
+  font-size: 65px;
+}
+p{
+  font-size: 30px;
 }
