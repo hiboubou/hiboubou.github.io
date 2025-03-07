@@ -5,7 +5,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Voyage en Nouvelle-Zélande</title>
-		<link rel="stylesheet" href="styles/styles.css">
+		<link rel="stylesheet" href="styles.css">
 		<style>
 	   /*Image du haut*/
 	   .boite{
@@ -17,7 +17,7 @@
 	   .imagehaut{
 	     margin: -350px 0px 0px 0px;
 	   }
-	  .matiere{
+	   .matiere{
 	    background-color:#ffff;
 	    padding:10px;
 	    text-align:center;
@@ -31,6 +31,32 @@
 	     position:relative;
 	     margin: auto;
 	   }
+	   .cadrerond{
+	     width: 31%; 
+	     height: 400px;
+	     border: 4px solid #ffff;
+	     border-radius: 100%;
+	     margin: 10px;
+	     overflow: hidden;
+	   }
+	   .glenorchy{
+	     margin: 0px -500px 0px -300px; 
+	     width: 800px;
+	   }
+	   .mer{
+	     width: 750px;
+	     margin-left: -100px;
+	   }
+	   .bloctexte{
+	     text-align: center;
+	     padding: 10px;
+	     margin: 7px;
+	     width: 30%;
+	     background-color: #81ccbd; 
+	     border: 3px solid #ffff;
+	     border-radius: 30px;
+	     float: left;
+	   }
 		</style>
 	</head>
 	
@@ -41,35 +67,75 @@
 	  </div>
 	  
 		<h1>Un voyage en Nouvelle-Zélande</h1>
-		<hr style="border-top: 3px solid #ffffff">
+		<hr style="border-top: 5px solid #ffffff; border-radius: 5px">
+		 <!--Source du code:https://www.w3schools.com/howto/howto_css_dividers.asp-->
 		
 		  <p>La Nouvelle-Zélande est un pays isoler composer de quelques îles remplis de vie. Il y a beaucoup à voir et faire, autant qu'il faudra prendre plusieurs voyages pour tout expériencer. Pour ce voyage en particulier nous allons concentrer sur l'île du sud.</p>
-		  <img src="images/montnz.jpeg" width="65%" float:"left">
+		  <img src="images/montnz.jpeg" width="65%">
 		  
 		<div class="matiere">
 		  <div class="deco">
-		    <h3 style="font-size:40px">Table de matière</h3>
+		    <h2>Table de matière</h2>
 	  	    <a href="#visite"><p style="font-size:20px">Où visiter</p></a>
 		      <a href="#nourriture"><p style="font-size:20px">La nourriture</p></a>
 		      <a href="index.html"><img src="images/fleche.png" width="150px"></a>
 		  </div>
-	  </div>
+	    </div>
 	  <br>
-	  <hr style="border-top: 3px solid #ffffff">
+	  <hr style="border-top: 3px solid #ffffff; border-radius: 5px; margin-top: 25px">
 
-		<a id="visite"><h3>Où Visiter</h3></a>
-		  <img src="">
-		  <p>Une première place à visiter est l'Île Ulva. C'est un sanctuaire pour une varieté d'oiseaux uniques tels que le kiwi, le manchôt à oeuil jaune et quelques espèces de perruches.</p>
-		    <!--Source: https://www.birdingplaces.eu/en/birdingplaces/new-zealand/ulva-island-->
-		  <p>Une autre place incontournable du pays est Arrowtown et le village proche de Glenorchy. Ces villages pictoresque sont populaires pour leur apparences dans les filmes de <i>Le Seigneur des Anneaux (Lord of the Rings).</i></p>
-		    <!--Source: https://davidtravisphotography.com/blog/NZ-Road-Trip-Part-1.html-->
-		  <p>Finalement, pour completer ta liste de destinations il faut visiter le château Larnach. Le château Larnach est le seul dans toute la nouvelle-Zélande et offre une expérience unique et plaisante. </p>
-		    <!--Source: https://www.larnachcastle.co.nz/-->
-		<a id="nourriture"><h3>La nourriture</h3></a>
-		  <p></p>
-		  <p></p>
-		  <p></p>
-		<br>
-	</body>
-	
-</html>
+		<a id="visite"><h2>Où Visiter</h2></a>
+		    <div class="cadrerond" style="float:left">
+		      <img src="images/oiseaunz.webp" margin="auto">
+        </div>		        
+        <div class="cadrerond" style="float:left">
+		      <img src="images/glenorchynz.jpg" class="glenorchy">
+		    </div>
+		    <div class="cadrerond" style="float:left">
+		      <img src="images/larnachnz.jpg">
+		    </div>
+		  <br>
+		    <div class="bloctexte">
+		      <h3><b>L'île Ulva</b></h3>
+		        <p>Une première place à visiter est l'Île Ulva. C'est un sanctuaire pour une varieté d'oiseaux uniques tels que le kiwi, le manchôt à oeuil jaune et quelques espèces de perruches.</p>
+		        <!--Source: https://www.birdingplaces.eu/en/birdingplaces/new-zealand/ulva-island-->
+		    </div>
+		    <div class="bloctexte">
+		      <h3><b>Arrowtown et Glenorchy</b></h3>
+		        <p>Une autre place incontournable du pays est Arrowtown et le village proche de Glenorchy. Ces villages pictoresque sont populaires pour leur apparences dans les filmes de <i>Le Seigneur des Anneaux (Lord of the Rings).</i></p>
+		        <!--Source: https://davidtravisphotography.com/blog/NZ-Road-Trip-Part-1.html-->
+		    </div>
+		    <div class="bloctexte">
+		      <h3><b>Château Larnach</b></h3>
+		        <p>Finalement, pour completer ta liste de destinations il faut visiter le château Larnach. Le château Larnach est le seul dans toute la nouvelle-Zélande et offre une expérience unique et plaisante. </p>
+		        <!--Source: https://www.larnachcastle.co.nz/-->
+		    </div>
+		  <hr style="border-top: 3px solid #ffffff; border-radius: 5px; padding: 50px">
+		  <br>  
+	      
+	  	<a id="nourriture"><h2>La nourriture</h2></a>
+		    <div class="cadrerond" style="float:left">
+		      <img src="images/nourriture1.jpg" class="mer">
+        </div>		        
+        <div class="cadrerond" style="float:left">
+		      <img src="images/nourriture2.webp"  width="720px" margin-left="-100px">
+		    </div>
+		    <div class="cadrerond" style="float:left">
+	        <img src="images/nourriture3.jpg">
+		    </div>
+	  	<br>
+		  
+		    <div class="bloctexte">
+		      <h3><b>Fruits de mer</b></h3>
+		        <p>parle de fruits de mer.... en production</p>
+		    </div>
+		    <div class="bloctexte">
+	        <h3><b>Agneau</b></h3>
+		        <p>parle d'agneau.... en production</p>
+		    </div>
+		    <div class="bloctexte">
+		      <h3><b>Hāngī</b></h3>
+		        <p>parle de Hangi.... en production</p>
+		    </div>
+		</body>
+	</html>
