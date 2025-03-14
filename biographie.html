@@ -4,6 +4,250 @@
 
 	<head>
 		<meta charset="UTF-8">
-		<title>Cours ICS3U - Génie informatique</title>
+		<title>Biographie</title>
+		<link rel="stylesheet" href="styles.css">
+		<style>
+	  /*Aid pour ce code: https://www.w3schools.com/css/css_link.asp*/
+	  a:link, a:visited{
+	    color: black;
+	    text-decoration: none;
+	  }
+	  a:hover{
+	    color:#00e8c5;
+	    text-decoration: underline;
+	  }
+	  /*Source du code initial: https://www.w3schools.com/html/html_table_borders.asp*/
+	  table, th, td {
+      		border: 3px solid #ffff;
+      		border-collapse: collapse;
+      		margin: auto;
+      		text-align: center;
+    	   }
+    /*Source du code: https://stackoverflow.com/questions/53255630/perfect-way-to-make-a-header*/
+    /*Code pour le dégradé des couleurs: https://www.w3schools.com/css/css3_gradients.asp*/
+    	.header {
+      		position: fixed;
+      		top: 0;
+      		left:0;
+      		width:100%;
+      		height:100px;
+      		padding-bottom: 20px;
+      		text-align: center;
+      		background-image: linear-gradient(175deg, #48b0a0, #48b0a0, #207a6c);
+      		color: white;
+      		z-index: 100;
+    	}
+	.moi{
+	     background-color: #ffff;
+	     width: 300px;
+	     height: 100px;
+	     border-radius: 10%;
+	     position: relative;
+	     padding: 1px;
+	     text-align: center;
+	     font-size: 20px;
+	   }
+	   /*Ce code a été figurer grâce à plusieurs sources qui expliquent le "z-index"... et celui qui a expliquer comment faire un en-tête*/
+	   .emphase{
+	     background-color: #48b0a0;
+	     width: 40px;
+	     height: 40px;
+	     border-radius: 15px;
+	     rotate: 10deg;
+	     margin: auto;
+	     position: relative;
+	     bottom: 65px;
+	     left: 63px;
+	     z-index: 1;
+	   }
+	    
+	   .bubo{
+	     width:30%;
+	     display: block;
+	     position: relative;
+	     float: right;
+	     padding: 20px;
+	   }
+	   
+	   .bloctexte{
+	     text-align: center;
+	     padding: 10px;
+	     margin: 7px;
+	     width: 50%;
+	     background-color: #81ccbd; 
+	     border: 3px solid #ffff;
+	     border-radius: 30px;
+	   }
+	   .lien{
+	     width: 50%;
+	     height:35px;
+	     background-color: #26857b;
+	     margin: auto;
+	     border-radius: 10px;
+	     font-size: 20px;
+	   }
+	   .cadrerond{
+	    	width: 40%; 
+		height: 200px;
+		border: 4px solid #ffff;
+	     	border-radius: 100%;
+		margin: 10px;
+	    	overflow: hidden;
+	   	}
+	   	.mc{
+	   	  width: 550px;
+	   	  margin-top: -75px;
+	   	}
+	
+	   /*Flèche de retour vers l'accueil*/
+      	.retour{
+        	border: 5px solid #ffff;
+		border-bottom-right-radius: 20px;
+   		width: 110px;
+  	      	height: 110px;
+        	position: fixed;
+        	top: 0;
+        	left: 0;
+        	z-index: 101;
+      	}
+	      .fleche{
+	        	width: 90px;
+	        	position: relative;
+	        	margin: auto;
+	        	padding:10px;
+		</style>
 	</head>
+	
+	<body>
+	  <!--Bloc de code pour l'entête (Qui m'a causé beaucoup de soucis....)-->
+	    <!--Source de code qui a règler mes problèmes: https://developer.mozilla.org/en-US/docs/Web/CSS/z-index-->
+	  <header class="header">
+		  <h1>Ma biographie</h1>
+	  </header>
+	  <!--Flèche vers l'accueil; Source de l'idée: https://www.w3schools.com/css/css_positioning.asp-->
+		<div class="retour">
+	    <div class="boitefleche">
+	      <a href="index.html"><img src="images/fleche.png" class="fleche"></a>
+	    </div>
+	  </div>
+	  
+	  <!--Source de l'image: https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Bubo_scandiacus_-Dierenpark_Amersfoort%2C_Netherlands_-female-8a.jpg/1200px-Bubo_scandiacus_-Dierenpark_Amersfoort%2C_Netherlands_-female-8a.jpg-->
+	  <img src="images/bubo.jpg" class="bubo">
+		
+		<!--Bloc "Qui suis-je?"-->
+		<div style="margin-top: 150px; margin-left: 20%">
+		  <div class="moi">
+	      <div style="border-inline: 5px solid #bcf5ea; margin: 10px; position: relative; z-index: 2"><h2>Qui suis-je?</h2></div>
+		    <div class="emphase"></div>
+		  </div> 
+	    <p style="text-align: center; position: relative; right: 15%">Bonjour! Je suis une élève du secondaire nommée <i>"M"</i>. Ce site web a été créer dans le context d'un cours d'informatique.</p>
+	    <p style="font-size:15px; position: relative; right: 15%">Non, vous ne pouvez pas savoir plus à propos de moi. :)</p>
+	    </div>
+	  </div>
+	  
+	  <br>
+	  
+		  <!--Table de matière copier de ma page de voyage-->
+	  <div class="matiere" style="margin-left: 7%; width: 50%">
+		  <div class="deco">
+	      <h2>Table de matière</h2>
+	 	      <a href="#lien1">L'Harfang des Neiges</a> <br>
+		    	<a href="#lien2">Wyrmspan</a> <br>
+		    	<a href="#lien3">La Flûte</a> <br>
+		    	<a href="#lien4">Les Dragons</a> <br>
+		    	<a href="#lien5">Minecraft</a> <br>
+		    	<a href="#tableau">Tableau de compétence</a> <br>
+	  	</div>
+	  </div>
+		
+		  <!--Section de liens-->
+	<h2>Mes liens préfèrés</h2>
+	  <p style="font-size: 15px">Cette section contient des liens vers des choses que j'aime. Ceux-ci varient de des animaux à des jeux et tout ce qu'il y a entre les deux. Amusez-vous!</p>
+		<hr style="border-top: 3px dashed #ffff; border-radius: 10px; margin-top: 20px">
+		
+		<div class="bloctexte" style="float: left">
+		  <div class="lien">
+		    <a href="https://www.natureconservancy.ca/fr/nos-actions/ressources/especes-en-vedette/oiseaux/harfang-des-neiges.html#:~:text=Bien%20que%20le%20harfang%20des,un%20habitat%20s%C3%BBr%20o%C3%B9%20vivre."><h3 id="lien1">L'Harfang des Neiges</h3></a>
+		  </div>
+		    <p>Si tu ne t'es pas rendu compte, j'adore les oiseaux, en particulier les harfangs des neiges! Alors, vous voici un lien vers la page de la Conservation de la Nature Canada sur cet bel oiseau.</p>
+		</div>
+		<!--Source de l'image: https://www.hww.ca/wp-content/uploads/2014/11/Snowy-Owl_Gavin-Comeau.jpg-->
+		<div class="cadrerond">
+		  <img src="https://www.hww.ca/wp-content/uploads/2014/11/Snowy-Owl_Gavin-Comeau.jpg" style="width: 550px">
+		</div>
+		
+		<!--Source de l'image: https://blule.fr/cdn/shop/articles/blule-wyrmspan-cover.jpg?v=1704498482-->
+		<div class="cadrerond" style="float: left">
+		  <img src="https://blule.fr/cdn/shop/articles/blule-wyrmspan-cover.jpg?v=1704498482" style="width: 600px">
+		</div>
+		<div class="bloctexte" style="margin-left: 600px">
+		  <div class="lien">
+		    <a href="https://canada.stonemaiergames.com/products/wyrmspan"><h3 id="lien2">Wyrmspan</h3></a>
+		  </div>
+		    <p>Wyrmspan est l'un de mes jeu de societé favoris et plus de son prédecesseur Wingspan. Ces deux jeux travaillent la stratégie en construisant de engins pour obtenir des ressources, accueillir des creatures et atteindre des objectifs.</p>
+		</div>
+		
+		<!--Source de l'image: https://upload.wikimedia.org/wikipedia/commons/5/5e/Western_concert_flute_2.JPG-->
+	  <div class="cadrerond" style="float:right">
+		  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Western_concert_flute_2.JPG" style="width: 550px">
+		</div>
+		<div class="bloctexte" style="position: relative; margin-top: 50px">
+		  <div class="lien">
+		    <a href="https://www.musicologie.org/sites/f/flute_traversiere.html"><h3 id="lien3">La Flûte</h3></a>
+		  </div>
+		    <p>La flûte, spécifiquement la flûte traversière est mon instrument de choix. Le lien ci-haut te mêne vers une explication et histoire simple de la flûte.</p>
+		</div>
+		
+		<!--Source de l'image: https://cdn2.picryl.com/photo/2015/12/26/dragon-3244-6a4328-1024.jpg-->
+		<div class="cadrerond" style="float: left">
+		  <img src="https://cdn2.picryl.com/photo/2015/12/26/dragon-3244-6a4328-1024.jpg" style="width: 550px">
+		</div>
+		<div class="bloctexte" style="margin-left: 600px; margin-top: 30px">
+		  <div class="lien">
+		    <a href="https://dragonfinity.com/blogs/blog/les-dragons-dans-lhistoire-et-la-mythologie-des-creatures-fascinantes#"><h3 id="lien4">Les Dragons</h3></a>
+		  </div>
+		    <p>Parmis les myths et légendes du monde, ceux des dragons sont très populaires. Ils sont la créature mythique dont j'aime le plus alors, le lien ci-haut te raconte l'histoire des dragons autour du monde.</p>
+		</div>
+		
+		<!--Source de l'image: Moi :)-->
+		<div class="cadrerond" style="float: right;">
+		  <img src="https://hiboubou.github.io/Bridge_Minecraft.png" class="mc">
+		</div>
+		<div class="bloctexte" style="margin-top: 25px">
+		  <div class="lien">
+		    <a href="https://www.minecraft.net/en-us"><h3 id="lien5">Minecraft</h3></a>
+		  </div>
+		    <p>Ce dernier lien est dédier vers mon jeux vidéo préférer. J'ai passée des nombreux heures à m'aventurer et à créer dans ce jeux alors il tient une place importante dans ma vie. L'image çi-contre est l'une de mes création dont je suis la plus fière, puis le lien mène simplement vers le site officiel du jeu.</p>
+		</div>
+		
+		<hr style="border-top: 3px dashed #ffff; border-radius: 10px; margin-top: 20px">
+		  
+		  <!--Section de compétences technologiques-->
+		  <table id="tableau" style="width: 70%">
+		    <tr style="background-color: #81ccbd">
+		      <th>Technologie</th>
+		      <th>Mon niveau de compétence</th>
+		    </tr>
+		    <tr>
+		      <td>Scripte HTML et CSS</td>
+		      <td>Débutante</td>
+		    </tr>
+		    <tr>
+		      <td>Navigation général d'un ordinateur</td>
+		      <td>Compétente à Experte</td>
+		    </tr>
+		    <tr>
+		      <td></td>
+		      <td></td>
+		    </tr>
+		    <tr>
+		      <td></td>
+		      <td></td>
+		    </tr>
+		  </table>
+		  
+		<hr style="border-top: 3px dashed #ffff; border-radius: 10px; margin: 20px">
+		<p style="font-size: 10px; text-align: center">Peu sur cette page s'applique à ma vie réelle, des informations fausses sont inclus</p>
+	</body>
+	
 </html>
