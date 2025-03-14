@@ -1,3 +1,19 @@
+.matiere{
+	 background-color:#ffff;
+	 padding:10px;
+	 text-align:center;
+	 width:50%;
+	 margin-left:7%;
+}
+	.deco{
+	   background-color:#ffff;
+	   border: 4px solid #81ccbd;
+	   border-radius: 10px;
+	   width:95%;
+	   margin: auto;
+     font-size: 25px;
+	 }
+
 body{
   background-color: #bcf5ea;
   font-family: Comic Sans MS, Comic Sans, cursive;
