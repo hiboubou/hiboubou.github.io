@@ -7,14 +7,11 @@
 		<title>Voyage en Nouvelle-Zélande</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<style>
-      a:link, a:visited{
-				color:#00e8c5;
-				font-size: 20px;
-      }
         /*Image du haut*/
       .boite{
         width:100%;
         height:175px;
+	margin-top: 140px;
         position:center;
         overflow:hidden;
       }
@@ -79,29 +76,26 @@
         float: left;
         color: #ffff;
       }
-      
-        /*Flèche de retour vers l'accueil*/
-      .retour{
-        background-color: #55ab9a;
-        border: 3px solid #ffff;
-        border-bottom-right-radius: 20px;
-        width: 100px;
-        height: 100px;
-        position: fixed;
-        top: 0;
-        left: 0;
-      }
-        .fleche{
-          width: 80px;
-          position: relative;
-          left: 10px;
-          top: 10px;
 		</style>
 	</head>
 
 
   <body>
-    <div class="boite">
+<!--Bloc de code pour l'entête (Qui m'a causé beaucoup de soucis....)-->
+	    <!--Source de code qui a règler mes problèmes: https://developer.mozilla.org/en-US/docs/Web/CSS/z-index-->
+	  <header class="header">
+		  <h1>Ma biographie</h1>
+		  <div class="menu">
+        <h3>
+          <a href="poeme.html">Poeme</a>
+          <a href="biographie.html">Biographie</a>
+        </h3>
+      </div>
+	<!--Flèche vers l'accueil; Source de l'idée: https://www.w3schools.com/css/css_positioning.asp-->
+	      <a href="index.html"><img src="images/fleche.png" class="fleche"></a>
+	  </header>
+	  
+<div class="boite">
       <!--Source pour faire la boite: https://cloudinary.com/guides/automatic-image-cropping/5-ways-to-crop-images-in-html-css-->
       <!--Source de l'image: https://cdn.prod.website-files.com/5d36cc33dbdba433e24e83ae/5e5f74cf21f663018c1d2681_Lupins-at-dawn-Tekapo.jpg-->
       <img src="images/fleursnz.jpg" class="imagehaut">
