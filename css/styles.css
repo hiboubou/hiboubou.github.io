@@ -1,3 +1,11 @@
+a:link, a:visited{
+	text-decoration: none;
+        color: #ffff;
+}
+a:hover{
+        color:#00e8c5;
+        text-decoration: underline;
+}
 .matiere{
 	 background-color:#ffff;
 	 padding:10px;
@@ -39,15 +47,6 @@
 		top: 0;
         	left: 0;
 	}
-a:link, a:visited{
-	text-decoration: none;
-        color: #ffff;
-}
-a:hover{
-        color:#00e8c5;
-        text-decoration: underline;
-}
-
 body{
   background-color: #bcf5ea;
   font-family: Comic Sans MS, Comic Sans, cursive;
