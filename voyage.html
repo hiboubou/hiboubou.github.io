@@ -7,148 +7,197 @@
 		<title>Voyage en Nouvelle-Zélande</title>
 		<link rel="stylesheet" href="css/styles.css">
 		<style>
-			a:link, a:visited{
-				color:#00e8c5;  
-			}
-		/*Image du haut*/
-	   		.boite{
-	    		width:100%;
-	    		height:175px;
-	    		position:center;
-	    		overflow:hidden;
-	   	}
-	    .imagehaut{
-	    		margin: -350px 0px 0px 0px;
-	   	}
-			
-	   	.cadrerond{
-	    		width: 31%; 
-	    		height: 400px;
-	     		border: 4px solid #ffff;
-	     		border-radius: 100%;
-	     		margin: 10px;
-		     	overflow: hidden;
-	   	}
-	   	.glenorchy{
-	     		margin: 0px -500px 0px -300px; 
-	     		width: 800px;
-	   	}
-	   .mer{
-	     width: 750px;
-	     margin-left: -100px;
-	   }
-	   .bloctexte{
-	     text-align: center;
-	     padding: 10px;
-	     margin: 7px;
-	     width: 30%;
-	     background-color: #81ccbd; 
-	     border: 3px solid #ffff;
-	     border-radius: 30px;
-	     float: left;
-	   }
-			/*Flèche de retour vers l'accueil*/
-      	   .retour{
-        			background-color: #55ab9a;
-        			border: 5px solid #ffff;
-	        		border-bottom-right-radius: 20px;
-        			width: 100px;
-        			height: 100px;
-        			position: fixed;
-        			top: 0;
-        			left: 0;
-      	  	}
-	      		.fleche{
-	       			width: 80px;
-	        		position: relative;
-	        		left: 10px;
-	        		top: 10px;
-			}
-			</style>
+      a:link, a:visited{
+	color:#00e8c5;
+	font-size: 20px;
+      }
+        /*Image du haut*/
+      .boite{
+        width:100%;
+        height:175px;
+        position:center;
+        overflow:hidden;
+      }
+        .imagehaut{
+          margin: -350px 0px 0px 0px;
+        }
+        
+      .matiere{
+        background-color:#ffff;
+        padding:10px;
+        text-align:center;
+        width: 90%;
+        position: relative;
+        left: 25px;
+      }
+        .deco{
+          background-color:#ffff;
+          border: 4px solid #81ccbd;
+          width:95%;
+          height:160px;
+          position:relative;
+          margin: auto;
+        }
+      .kea{
+        border: 4px solid #ffff;
+        border-radius: 50%;
+        rotate: 10deg;
+        width: 310px;
+        height: 340px;
+        position: relative;
+        left: 20px;
+        top: 20px;
+        overflow: hidden;
+      }
+      
+        /*Parties d'extra pour les images et le texte*/
+      .cadrerond{
+        width: 31%; 
+        height: 400px;
+        border: 4px solid #ffff;
+        border-radius: 100%;
+        margin: 10px;
+        overflow: hidden;
+      }
+        .glenorchy{
+          margin: 0px -500px 0px -300px; 
+          width: 800px;
+        }
+        .mer{
+          width: 750px;
+          margin-left: -100px;
+        }
+      .bloctexte{
+        text-align: center;
+        padding: 10px;
+        margin: 7px;
+        width: 30%;
+        background-color: #48b0a0; 
+        border: 3px solid #ffff;
+        border-radius: 30px;
+        float: left;
+        color: #ffff;
+      }
+      
+        /*Flèche de retour vers l'accueil*/
+      .retour{
+        background-color: #55ab9a;
+        border: 3px solid #ffff;
+        border-bottom-right-radius: 20px;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+        .fleche{
+          width: 80px;
+          position: relative;
+          left: 10px;
+          top: 10px;
+		</style>
 	</head>
-	
-	<body>
-	  <div class="boite">
-	    <!--Source:https://cloudinary.com/guides/automatic-image-cropping/5-ways-to-crop-images-in-html-css-->
-	    <img src="images/fleursnz.jpg" class="imagehaut">
-	  </div>
-	  
-	<h1>Un voyage en Nouvelle-Zélande</h1>
-	<hr style="border-top: 5px solid #ffffff; border-radius: 5px">
-		<!--Source du code:https://www.w3schools.com/howto/howto_css_dividers.asp-->
-		
-		<p>La Nouvelle-Zélande est un pays isoler composer de quelques îles remplis de vie. Il y a beaucoup à voir et faire, autant qu'il faudra prendre plusieurs voyages pour tout expériencer. Pour ce voyage en particulier nous allons concentrer sur l'île du sud.</p>
-		<img src="images/montnz.jpeg" width="65%">
 
-		<!--Table de matière-->
-	<div class="matiere" style="width:30%; float:right;">
-		<div class="deco">
-			<h2>Table de matière</h2>
-	  			<a href="#visite">Où visiter</a> <br>
-				<a href="#nourriture">La nourriture</a>
-		</div>
-	</div>
-		
-	  <br>
-		<hr style="border-top: 3px solid #ffffff; border-radius: 5px; margin-top: 25px">
-		
-	<a id="visite"><h2 style="text-align: center; position:relative">Où Visiter</h2></a>
-		<div class="cadrerond" style="float:left">
-		      <img src="images/oiseaunz.webp" margin="auto">
-        	</div>		        
-        	<div class="cadrerond" style="float:left">
-		      <img src="images/glenorchy.png" class="glenorchy">
-		</div>
-		<div class="cadrerond" style="float:left">
-		      <img src="images/larnachnz.jpg">
-		</div>
-		  <br>
-		
-		    <div class="bloctexte">
-		      <h3><b>L'île Ulva</b></h3>
-		        <p>Une première place à visiter est l'Île Ulva. C'est un sanctuaire pour une varieté d'oiseaux uniques tels que le kiwi, le manchôt à oeuil jaune et quelques espèces de perruches.</p>
-		        <!--Source: https://www.birdingplaces.eu/en/birdingplaces/new-zealand/ulva-island-->
-		    </div>
-		    <div class="bloctexte">
-		      <h3><b>Arrowtown et Glenorchy</b></h3>
-		        <p>Une autre place incontournable du pays est Arrowtown et le village proche de Glenorchy. Ces villages pictoresque sont populaires pour leur apparences dans les filmes de <i>Le Seigneur des Anneaux (Lord of the Rings).</i></p>
-		        <!--Source: https://davidtravisphotography.com/blog/NZ-Road-Trip-Part-1.html-->
-		    </div>
-		    <div class="bloctexte">
-		      <h3><b>Château Larnach</b></h3>
-		        <p>Finalement, pour completer ta liste de destinations il faut visiter le château Larnach. Le château Larnach est le seul dans toute la nouvelle-Zélande et offre une expérience unique et plaisante. </p>
-		        <!--Source: https://www.larnachcastle.co.nz/-->
-		    </div>
-		  <hr style="border-top: 5px solid #ffffff; border-radius: 5px; display:bloc; position: relative; margin-top: 650px">
-		  <br>  
-	      
-	  	<a id="nourriture"><h2 style="text-align: center">La nourriture</h2></a>
-		    <div class="cadrerond" style="float:left">
-		      <img src="images/nourriture1.jpg" class="mer">
-        </div>		        
-        <div class="cadrerond" style="float:left">
-		      <img src="images/nourriture2.webp"  width="720px" margin-left="-100px">
-		    </div>
-		    <div class="cadrerond" style="float:left">
-	        <img src="images/nourriture3.jpg">
-		    </div>
-	  	<br>
-		    <div class="bloctexte">
-		      <h3><b>Fruits de mer</b></h3>
-		        <p>parle de fruits de mer.... en production</p>
-		    </div>
-		    <div class="bloctexte">
-	        <h3><b>Agneau</b></h3>
-		        <p>parle d'agneau.... en production</p>
-		    </div>
-		    <div class="bloctexte">
-		      <h3><b>Hāngī</b></h3>
-		        <p>parle de Hangi.... en production</p>
-		    </div>
 
-		<!--Flèche vers l'accueil; Source de l'idée: https://www.w3schools.com/css/css_positioning.asp-->
-		<div class="retour">
-	     		<a href="index.html"><img src="https://www.iconpacks.net/icons/2/free-back-arrow-icon-3095-thumb.png" class="fleche"></a>
-	  	</div>
+  <body>
+    <div class="boite">
+      <!--Source pour faire la boite: https://cloudinary.com/guides/automatic-image-cropping/5-ways-to-crop-images-in-html-css-->
+      <!--Source de l'image: https://cdn.prod.website-files.com/5d36cc33dbdba433e24e83ae/5e5f74cf21f663018c1d2681_Lupins-at-dawn-Tekapo.jpg-->
+      <img src="https://hiboubou.github.io/images/fleursnz.jpg" class="imagehaut">
+    </div>
+    
+    <h1>Un voyage en Nouvelle-Zélande</h1>
+    
+    <!--Source du code:https://www.w3schools.com/howto/howto_css_dividers.asp-->
+		  <hr style="border-top: 5px dashed #ffffff; border-radius: 5px">
+		
+    <p>La Nouvelle-Zélande est un pays isoler composer de quelques îles remplis de vie. Il y a beaucoup à voir et faire, autant qu'il faudra prendre plusieurs voyages pour tout expériencer. Pour ce voyage en particulier nous allons concentrer sur l'île du sud.</p>
+    <!--Source de l'image: https://aebc975c.delivery.rocketcdn.me/wp-content/uploads/2021/12/iStock-875331434-1.jpg.webp-->
+    <img src="https://aebc975c.delivery.rocketcdn.me/wp-content/uploads/2021/12/iStock-875331434-1.jpg.webp" width="65%">
+		
+		<div style="float: right; width: 30%; position: relative; right: 20px">
+      <div class="matiere">
+        <div class="deco">
+          <h2>Table de matière</h2>
+            <a href="#visite">Où visiter</a> <br>
+            <a href="#nourriture">La nourriture</a>
+        </div>
+      </div>
+      <!--Source de l'image: https://www.explore-new-zealand.com/image-files/birds-kea-parrot-bird-flying-arthurs-pass-new-zealand-karl-anderson.jpg-->
+      <div class="kea">
+        <img src="https://www.explore-new-zealand.com/image-files/birds-kea-parrot-bird-flying-arthurs-pass-new-zealand-karl-anderson.jpg" style="display: bloc; width: 120%; position: relative; right: 40px; bottom: 25px">
+      </div>
+    </div>
+      
+      <br>
+      <hr style="border-top: 5px dashed #ffffff; border-radius: 5px; margin-top: 25px">
+      <br>
+      
+		<a id="visite"><h2 style="text-align: center">Où Visiter</h2></a>
+      <div class="cadrerond" style="float:left">
+          <!--Source de l'image: https://kiwifootprints.com/wp-content/uploads/2022/06/kakariki-bird-2-ulva-island-copyright-ngaire-ackerley-2022.jpg?w=800-->
+        <img src="https://kiwifootprints.com/wp-content/uploads/2022/06/kakariki-bird-2-ulva-island-copyright-ngaire-ackerley-2022.jpg?w=800" margin="auto">
+      </div>		        
+      <div class="cadrerond" style="float:left">
+          <!--Source de l'image: https://upload.wikimedia.org/wikipedia/commons/8/81/Glenorchy_wharf_and_red_shed_at_Lake_Wakatipu.jpg-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Glenorchy_wharf_and_red_shed_at_Lake_Wakatipu.jpg" class="glenorchy">
+      </div>
+      <div class="cadrerond" style="float:left">
+          <!--Source de l'image: https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/64/fe.jpg-->
+        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/64/fe.jpg">
+      </div>
+        <br>
+        
+      <div class="bloctexte">
+        <h3><b>L'île Ulva</b></h3>
+          <p>Une première place à visiter est l'Île Ulva. C'est un sanctuaire pour une varieté d'oiseaux uniques tels que le kiwi, le manchôt à oeuil jaune et quelques espèces de perruches.</p>
+            <!--Source: https://www.birdingplaces.eu/en/birdingplaces/new-zealand/ulva-island-->
+      </div>
+      <div class="bloctexte">
+        <h3><b>Arrowtown et Glenorchy</b></h3>
+          <p>Une autre place incontournable du pays est Arrowtown et le village proche de Glenorchy. Ces villages pictoresque sont populaires pour leur apparences dans les filmes de <i>Le Seigneur des Anneaux (Lord of the Rings).</i></p>
+            <!--Source: https://davidtravisphotography.com/blog/NZ-Road-Trip-Part-1.html-->
+      </div>
+      <div class="bloctexte">
+        <h3><b>Château Larnach</b></h3>
+          <p>Finalement, pour completer ta liste de destinations il faut visiter le château Larnach. Le château Larnach est le seul dans toute la nouvelle-Zélande et offre une expérience unique et plaisante. </p>
+            <!--Source: https://www.larnachcastle.co.nz/-->
+      </div>
+        
+        <br>  
+        <hr style="border-top: 5px dashed #ffffff; border-radius: 5px; display:bloc; margin-top: 650px">
+        
+    <a id="nourriture"><h2 style="text-align: center; position:relative">La nourriture</h2></a>
+      <div class="cadrerond" style="float:left">
+          <!--Source de l'image: https://images.ctfassets.net/on0b3359khf9/33yMvTnzR3Av1arwHEkTcy/c4aa9e3b6cfbdf37f25641c1fbd84cb6/Seafood1_SectorsImage_3000x1596px.jpg-->
+        <img src="https://images.ctfassets.net/on0b3359khf9/33yMvTnzR3Av1arwHEkTcy/c4aa9e3b6cfbdf37f25641c1fbd84cb6/Seafood1_SectorsImage_3000x1596px.jpg" class="mer">
+      </div>
+      <div class="cadrerond" style="float:left">
+          <!--Source de l'image: https://www.beckandbulow.com/cdn/shop/articles/Untitled-design-39-page-001-min-scaled_2560x.jpg?v=1678888539-->
+        <img src="https://www.beckandbulow.com/cdn/shop/articles/Untitled-design-39-page-001-min-scaled_2560x.jpg?v=1678888539" width="720px" margin-left="-100px">
+      </div>
+      <div class="cadrerond" style="float:left">
+          <!--Source de l'image: https://blog.raymears.com/wp-content/uploads/2012/01/food-in-hangi.jpg-->
+        <img src="https://blog.raymears.com/wp-content/uploads/2012/01/food-in-hangi.jpg">
+      </div>
+        <br>
+        
+      <div class="bloctexte">
+        <h3><b>Fruits de mer</b></h3>
+          <p>parle de fruits de mer.... en production</p>
+      </div>
+      <div class="bloctexte">
+        <h3><b>Agneau</b></h3>
+          <p>parle d'agneau.... en production</p>
+      </div>
+      <div class="bloctexte">
+        <h3><b>Hāngī</b></h3>
+          <p>parle de Hangi.... en production</p>
+      </div>
+        
+        <!--Flèche vers l'accueil; Source de l'idée: https://www.w3schools.com/css/css_positioning.asp-->
+      <div class="retour">
+        <a href="index.html"><img src="https://www.iconpacks.net/icons/2/free-back-arrow-icon-3095-thumb.png" class="fleche"></a>
+      </div>
 		</body>
 	</html>
