@@ -5,7 +5,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Accueil</title>
     <style>
       a:link, a:visited{
@@ -40,21 +40,18 @@
       <h1>Accueil</h1>
       <div class="m">Par "M"</div>
     </header>
-  
+    
     <div style="margin-top: 150px">
-      <p style="text-align: center">Bienvenu à ce projet de site web! Pour plus d'information sur moi, visite la page "biographie", autrement, amuse toi à explorer ce que j'ai fait!</p>
-    </div>
-    <br>
-    <div class="apercu" style="background-image: url(images/oiseauxpm.jpg)">
-        <a href="poeme.html">
-          <h3 style="text-align: center">Poeme</h3>
-        </a>
-    </div>
-    <div class="apercu" style="background-image: url(images/voyage.png)">
-        <a href="voyage.html"><h3 style="text-align: center">Voyage</h3></a>
-    </div>
-    <div class="apercu" style="background-image: url(images/biographie.png)">
-        <a href="biographie.html"><h3 style="text-align: center">Biographie</h3></a>
+        <!--Source utiliser pour les arrière plans "aperçus": https://developer.mozilla.org/en-US/docs/Web/CSS/background-size-->
+      <div class="apercu" style="background-image: url(https://hiboubou.github.io/images/poeme.png); background-size: auto 300px; background-position:center">
+        <a href="poeme.html"><h3 style="text-align: center; font-size: 50px">Poeme</h3></a>
+      </div>
+      <div class="apercu" style="background-image: url(https://hiboubou.github.io/images/voyage.png); background-size: auto 300px; background-position:center">
+        <a href="voyage.html"><h3 style="text-align: center; font-size: 50px">Voyage</h3></a>
+      </div>
+      <div class="apercu" style="background-image: url(https://hiboubou.github.io/images/biographie.png); background-size: auto 300px; background-position:center">
+        <a href="biographie.html"><h3 style="text-align: center; font-size: 50px">Biographie</h3></a>
+      </div>
     </div>
   </body>
 </html>
