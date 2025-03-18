@@ -6,6 +6,9 @@ a:hover{
         color:#00e8c5;
         text-decoration: underline;
 }
+.lien2:link, lien2:visited{
+	color: #ffff;
+}
 .matiere{
 	 background-color:#ffff;
 	 padding:10px;
