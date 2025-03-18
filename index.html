@@ -9,49 +9,56 @@
     <title>Accueil</title>
     <style>
       a:link, a:visited{
-        color: #000000;
         text-decoration: none;
+        color: #ffff
       }
       a:hover{
         color:#00e8c5;
         text-decoration: underline;
       }
+        /*Source utiliser pour appliquer le "blur": https://www.w3schools.com/howto/howto_css_blurred_background.asp*/
+        /*Source utiliser pour créer un boutton: https://www.w3schools.com/tags/tag_button.asp*/
+        /*Source utiliser pour la claireté: https://www.geeksforgeeks.org/how-to-darken-an-image-using-css/*/
       .apercu{
         width: 31%; 
         height: 300px;
         border: 4px solid #ffff;
         border-radius: 20%;
+        background-size: auto 300px;
+        background-position: center;
         margin: 10px;
-        background-color: #ffff;
+        filter: brightness(90%);
         overflow: hidden;
         float: left;
       }
-      .m{
-        position:relative;
-        bottom: 100px;
-        left: 250px;
-        font-size: 20px;
+      .apercu:hover{
+        filter: brightness(100%);
       }
     </style>
   </head>
 
   <body>
     <header class="header">
-      <h1>Accueil</h1>
-      <div class="m">Par "M"</div>
+      <h1 style="display: bloc; position: relative; right:;">Accueil</h1>
+      <div class="menu">
+        <h3>
+          <a href="poeme.html">Poeme</a>
+          <a href="voyage.html">Voyage</a>
+          <a href="biographie.html">Biographie</a>
+        </h3>
+      </div>
     </header>
-    
+  
     <div style="margin-top: 150px">
-        <!--Source utiliser pour les arrière plans "aperçus": https://developer.mozilla.org/en-US/docs/Web/CSS/background-size-->
-      <div class="apercu" style="background-image: url(https://hiboubou.github.io/images/poeme.png); background-size: auto 300px; background-position:center">
-        <a href="poeme.html"><h3 style="text-align: center; font-size: 50px">Poeme</h3></a>
-      </div>
-      <div class="apercu" style="background-image: url(https://hiboubou.github.io/images/voyage.png); background-size: auto 300px; background-position:center">
-        <a href="voyage.html"><h3 style="text-align: center; font-size: 50px">Voyage</h3></a>
-      </div>
-      <div class="apercu" style="background-image: url(https://hiboubou.github.io/images/biographie.png); background-size: auto 300px; background-position:center">
-        <a href="biographie.html"><h3 style="text-align: center; font-size: 50px">Biographie</h3></a>
-      </div>
+      <a href="poeme.html">
+        <button class="apercu" style="background-image: url(https://hiboubou.github.io/images/poeme.png)"></button>
+      </a>
+      <a href="voyage.html">
+        <button class="apercu" style="background-image: url(https://hiboubou.github.io/images/voyage.png)"></button>
+      </a>
+      <a href="biographie.html">
+        <button class="apercu" style="background-image: url(https://hiboubou.github.io/images/biographie.png)"></button>
+      </a>
     </div>
   </body>
 </html>
