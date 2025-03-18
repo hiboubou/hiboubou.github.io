@@ -10,6 +10,7 @@
 .haut{
   text-align: center;
   padding: 10px;
+  margin-top: 100px;
   border: 5px;
   background-color: #48b0a0;
   color: white;
@@ -34,27 +35,26 @@
     border: 3px solid #ffff;
     margin: auto;
   } 
-/*Flèche de retour vers l'accueil*/
-.retour{
-  background-color: #48b0a0;
-  border: 5px solid #ffff;
-  border-bottom-right-radius: 20px;
-  width: 100px;
-  height: 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-	 .fleche{
-	   width: 80px;
-	   position: relative;
-	   left: 10px;
-	   top: 10px;
-	 }
     </style>
   </head>
   
   <body>
+	<header class="header">
+		  <h1>Ma biographie</h1>
+		  <div class="menu">
+        <h3>
+          <a href="biographie.html" style="color: #ffff">Biographie</a>
+          <a href="voyage.html" style="color: #ffff">Voyage</a>
+        </h3>
+      </div>
+	<!--Flèche vers l'accueil; Source de l'idée: https://www.w3schools.com/css/css_positioning.asp-->
+	<div class="retour">
+	    <div class="boitefleche">
+	      <a href="index.html"><img src="images/fleche.png" class="fleche"></a>
+	    </div>
+	  </div>
+	  </header>
+	  
     <div class="haut">
       <h1>Vol d'oiseaux migrateurs</h1>
       <p><b>Par: Charly Lellouche</b></p>
