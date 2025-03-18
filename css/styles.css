@@ -58,3 +58,11 @@ h3{
 p{
   font-size: 30px;
 }
+a:link, a:visited{
+	text-decoration: none;
+        color: #ffff
+}
+a:hover{
+        color:#00e8c5;
+        text-decoration: underline;
+}
