@@ -6,7 +6,7 @@ a:hover{
         color:#00e8c5;
         text-decoration: underline;
 }
-.lien2{
+.lien2:link, .lien2:visited{
 	color: #000000;
 }
 .matiere{
