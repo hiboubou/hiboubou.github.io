@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+.haut{
+  padding: 10px;
+  margin-top: 120px;
+  border: 5px;
+}
+    </style>
+  </head>
+  
+  <body>
+	<header class="header">
+		  <h1>Quiz Techno</h1>
+		  <div class="menu">
+        <h3>
+	  <a href="java.html">Exercices</a>
+        </h3>
+      </div>
+	<!--Flèche vers l'accueil; Source de l'idée: https://www.w3schools.com/css/css_positioning.asp-->
+		<a href="index.html"><img src="images/fleche.png" class="fleche"></a>
+	  </header>
+	  
+      <br><br>
+	  <div class="haut"></div>
+      <!-- Quiz du cours de technologie -->
+  <form>
+    <h1>Quiz</h1>
+    <!--Demander de selectionner la réponse avec un select-->
+    <label for="balise">Quel balise crée une boucle avec une variable intégrer</label>
+    <select id="balise">
+        <option value="while">while</option>
+        <option value="if">if</option>
+        <option value="for">for</option>
+        <option value="var">var</option>
+    </select>
+    
+    <br><br>
+    <!-- Demander pour lesquels des languages de code qu'on a appris avec des "checkbox" -->
+    <label for="languages">Quels langages de code a t'on appris?</label>
+    <input type="checkbox" name="language" value="Javascript"> Javascript
+    <input type="checkbox" name="language" value="Java"> Java
+    <input type="checkbox" name="language" value="CSS"> CSS
+    <input type="checkbox" name="language" value="Python"> Python
+    <input type="checkbox" name="language" value="C++"> C++
+    <input type="checkbox" name="language" value="HTML"> HTML
+    
+    <br><br>
+    <!-- Demander pour le -->
+    <label for="mot">Quel est le mot clé pour une sortie sur le côté de la console?</label>
+    <input type="text" id="mot">
+    <br><br>
+
+    <!-- Bouton pour soumettre les données -->
+    <input type="button" id="btnSoumet" onclick="corrige()"  value="Soumet et corrige">
+
+    <!-- Création d'une section pour l'affichage des résultats -->
+    <div id="divAffiche">
+    </div>
+    
+    <script>
+        //Affiche la correction
+        function corrige() {
+            var affiche = document.getElementById("divAffiche");
+            var pourcentage = 0;
+            
+            var balises = document.getElementById("balise").value;
+            var langues = document.getElementsByName("language");
+            var motCle = document.getElementById("mot").value;
+            
+            //Correction du select
+            if(balises == "for"){
+                pourcentage += 33;
+            }
+            
+            //Correction des langues sélectionnées
+            for(var i=0; i<langues.length; i++) {
+                if (langues[i].checked){
+                    if ((langues[i].value == "Javascript") || (langues[i].value == "CSS") || (langues[i].value == "HTML")) {
+                        pourcentage += 11;
+                    } else {
+                       pourcentage -= 5; 
+                    }
+                }
+            }
+            
+            //Correction dernière question
+            if(motCle == "console.log"){
+                pourcentage += 34;
+            }
+            
+            //Renvoie le resultat
+            var resultat = "Voici ton resultat: " +pourcentage;
+            var corriger = "Le corriger est: Q1: for, Q2: Javascript, CSS et HTML, Q3: console.log"
+            affiche.innerHTML = resultat +"<br><br>" +corriger;
+        }
+    </script>
+  </form>
+  </body>
+  
+</html>
